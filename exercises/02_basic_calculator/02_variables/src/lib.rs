@@ -7,8 +7,9 @@
 /// calculate the average speed.
 pub fn speed(start: u32, end: u32, time_elapsed: u32) -> u32 {
     // TODO: define a variable named `distance` with the right value to get tests to pass
-    //  Do you need to annotate the type of `distance`? Why or why not?
-
+    // Do you need to annotate the type of `distance`? Why or why not?
+    // I don't need to identify the type because both variables are already u32, and anyway Rust only allows you to do it if the types are the same. 
+    let distance = end - start;
     // Don't change the line below
     distance / time_elapsed
 }
